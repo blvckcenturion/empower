@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from '../../globalStyles';
 import {
   FaFacebook,
   FaInstagram,
@@ -9,11 +8,6 @@ import {
 } from 'react-icons/fa';
 import {
   FooterContainer,
-  FooterSubscription,
-  FooterSubText,
-  FooterSubHeading,
-  Form,
-  FormInput,
   FooterLinksContainer,
   FooterLinksWrapper,
   FooterLinkItems,
@@ -31,16 +25,6 @@ import {
 function Footer() {
   return (
     <FooterContainer>
-      <FooterSubscription>
-        <FooterSubHeading>
-          Join our exclusive membership to receive the latest news and trends
-        </FooterSubHeading>
-        <FooterSubText>You can unsubscribe at any time.</FooterSubText>
-        <Form>
-          <FormInput name='email' type='email' placeholder='Your Email' />
-          <Button fontBig>Subscribe</Button>
-        </Form>
-      </FooterSubscription>
       <FooterLinksContainer>
         <FooterLinksWrapper>
           <FooterLinkItems>
@@ -68,22 +52,17 @@ function Footer() {
             <FooterLink to='/'>Influencer</FooterLink>
           </FooterLinkItems>
           <FooterLinkItems>
-            <FooterLinkTitle>Social Media</FooterLinkTitle>
-            <FooterLink to='/'>Instagram</FooterLink>
-            <FooterLink to='/'>Facebook</FooterLink>
-            <FooterLink to='/'>Youtube</FooterLink>
-            <FooterLink to='/'>Twitter</FooterLink>
+            <FooterLinkTitle>More Info</FooterLinkTitle>
+            <FooterLink to='/'>Locations</FooterLink>
+            <FooterLink to='/'>Sitemap</FooterLink>
+            <FooterLink to='/'>Privacy Policy</FooterLink>
+            <FooterLink to='/'>The team</FooterLink>
           </FooterLinkItems>
         </FooterLinksWrapper>
       </FooterLinksContainer>
       <SocialMedia>
         <SocialMediaWrap>
-          <SocialLogo to='/'>
-            <SocialIcon />
-            ULTRA
-          </SocialLogo>
-          <WebsiteRights>ULTRA © 2020</WebsiteRights>
-          <SocialIcons>
+        <SocialIcons>
             <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
               <FaFacebook />
             </SocialIconLink>
@@ -91,13 +70,7 @@ function Footer() {
               <FaInstagram />
             </SocialIconLink>
             <SocialIconLink
-              href={
-                '//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber'
-              }
-              rel='noopener noreferrer'
-              target='_blank'
-              aria-label='Youtube'
-            >
+              href='/' target='_blank' aria-label='Youtube'>
               <FaYoutube />
             </SocialIconLink>
             <SocialIconLink href='/' target='_blank' aria-label='Twitter'>
@@ -107,6 +80,12 @@ function Footer() {
               <FaLinkedin />
             </SocialIconLink>
           </SocialIcons>
+          <WebsiteRights>EMPOWER © {new Date().getFullYear()}</WebsiteRights>
+          
+          <SocialLogo to='/'>
+            <SocialIcon />
+            EMPOWER
+          </SocialLogo>
         </SocialMediaWrap>
       </SocialMedia>
     </FooterContainer>

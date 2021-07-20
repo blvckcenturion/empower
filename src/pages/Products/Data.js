@@ -1,57 +1,60 @@
-export const homeObjOne = {
+export const productObjOne = {
   lightBg: true,
   lightText: false,
   lightTopLine: false,
   lightTextDesc: false,
-  topLine: 'View Our Products',
-  headline: 'Shop through our catalog of products',
+  topLine: '#1',
+  headline: 'Search Engine Optimization - SEO',
   description:
-    'We provide worldwide shipping to all countries. If there are any issues, just issue a refund and we will process your request',
-  buttonLabel: 'Shop Now',
+    'Through careful keyword research and white hat practices, we can help you achieve high rankings in the major search engines.',
+  buttonLabel: 'Start Now',
   imgStart: '',
-  img: require('../../images/svg-1.svg'),
-  alt: 'Credit Card'
+  img: require('../../images/svg-4.svg'),
+  alt: 'Search Engine Optimization'
 };
 
-export const homeObjTwo = {
+export const productObjTwo = {
   lightBg: false,
   lightText: true,
+  primary: true,
   lightTopLine: true,
   lightTextDesc: true,
-  topLine: '100% Secure',
-  headline: 'Stay protected 24/7 anywhere anytime',
+  topLine: '#2',
+  headline: 'Social Media Marketing',
   description:
-    'We have you covered no matter where you are located. Over 140 locations worldwide to ensure you have access anytime',
-  buttonLabel: 'Learn More',
+    'Social media marketing is a critical element in staying connected with your audience. Working independently of, or side-by-side with you, we help keep your social community engaged.',
+  buttonLabel: 'Start Now',
   imgStart: '',
-  img: require('../../images/svg-1.svg'),
-  alt: 'Vault'
+  img: require('../../images/svg-5.svg'),
+  alt: 'Social Media Marketing'
 };
 
-export const homeObjThree = {
+export const productObjThree = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: 'Easy Setup',
-  headline: 'Super fast and simple onboarding process',
+  topLine: '#3',
+  headline: 'Website Design & Development',
   description:
-    "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
+    "With millions of websites on the internet you want to be sure your website stands out, represents you well, and most importantly, helps your organization grow.",
   buttonLabel: 'Start Now',
-  imgStart: 'start',
-  img: require('../../images/svg-1.svg'),
-  alt: 'Vault'
+  imgStart: '',
+  img: require('../../images/svg-6.svg'),
+  alt: 'Website Design & Development'
 };
 
-export const homeObjFour = {
+export const productObjFour = {
   lightBg: false,
+  primary: true,
   lightText: true,
+  lightTopLine: true,
   lightTextDesc: true,
-  topLine: 'DATA ANALYTICS',
-  headline: 'Every transaction is stored on our secure cloud database',
+  topLine: '#4',
+  headline: 'Reputation Management',
   description:
-    'Never ever have to worry again about saved reciepts. We store your data, so you can access it anytime.',
-  buttonLabel: 'Sign Up Now',
-  imgStart: 'start',
-  img: require('../../images/svg-1.svg'),
-  alt: 'Vault'
+    'Your reputation is everything. Our team of experts can help protect and enhance your reputation online for tangible, long-term results.',
+  buttonLabel: 'Start Now',
+  imgStart: '',
+  img: require('../../images/svg-7.svg'),
+  alt: 'Reputation Management'
 };
